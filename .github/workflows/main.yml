@@ -22,6 +22,6 @@ jobs:
     - name: Build and push Docker images
       uses: docker/build-push-action@v2
       with:
-        context: ../
-        push: 'true'
+        context: .
+        push: TRUE
         tags: nereus22/cd-test:${{ github.ref }}
