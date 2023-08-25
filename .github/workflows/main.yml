@@ -27,7 +27,7 @@ jobs:
     - name: Build and push Docker images
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ghaction-test
         file: ghaction-test/Dockerfile
         push: true
         tags: nereus22/cd-test:${{ env.RELEASE_VERSION }}
